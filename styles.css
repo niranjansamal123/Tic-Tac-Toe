@@ -1,0 +1,104 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c3e50; /* Dark background color */
+  color: #ecf0f1; /* Light text color */
+  justify-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #2c3e50; /* Slightly lighter dark background */
+  /* padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #e74c3c; /* Red accent color for header */
+}
+
+#game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  background-color: #34495e;
+  border: 2px solid #1abc9c; /* Light border */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #34495e;
+  border: 2px solid #ecf0f1; /* Light border for cells */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  color: #ecf0f1; /* Light text color */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #1abc9c; /* Green accent color on hover */
+}
+
+#scoreboard {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  color: #ecf0f1; /* Light text color */
+}
+
+#turnIndicator {
+  margin: 20px auto;
+  font-size: 1.5em;
+  color: #f39c12; /* Yellow accent color */
+}
+
+#controls {
+  display: flex;
+  flex-direction: row; /* Align buttons in a row */
+  align-items: center;
+  margin: 20px auto;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px; /* Space between logo and buttons */
+}
+
+#reset,
+#modeToggle {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #2c3e50; /* Dark text color */
+  background-color: #ecf0f1; /* Light background color */
+  border: none;
+  cursor: pointer;
+  margin: 5px 10px; /* Space between buttons */
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+#reset:hover,
+#modeToggle:hover {
+  background-color: #bdc3c7; /* Slightly darker light background on hover */
+}
